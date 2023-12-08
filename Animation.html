@@ -1,12 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="/CSS/Animation.css">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TEST</title>
+<style>
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.webp {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  color: white;
+  font-size: 128px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
 </head>
 <body>
-  <img autoplay muted loop src="Video/1208.webp"></img>
+<div class="container">
+  <img class="webp" src="Video/1208.webp" alt="your_webp_file">
+  <h3>1%</h3>
+</div>
+
+<script>
+(function() {
+  var progress = 0;
+  var interval = setInterval(function() {
+    progress++;
+    if (progress === 100) {
+      clearInterval(interval);
+      document.querySelector("h3").textContent = "Click!";
+      document.querySelector("body").addEventListener("click", function() {
+        window.location.href = "https://www.google.com";
+      });
+    } else {
+      document.querySelector("h3").textContent = progress + "%";
+    }
+  }, 30);
+})();
+</script>
 </body>
 </html>
