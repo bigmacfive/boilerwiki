@@ -4,12 +4,12 @@
       progress++;
       if (progress === 100) {
         clearInterval(interval);
-        document.querySelector("h3").textContent = "Click!";
-        document.querySelector("body").addEventListener("click", function() {
+        document.querySelector("#progress").textContent = "Click!";
+        document.body.addEventListener("click", function() {
           window.location.href = "https://boilerwiki.me/main";
         });
       } else {
-        document.querySelector("h3").textContent = progress + "%";
+        document.querySelector("#progress").textContent = progress + "%";
       }
     }, 30);
   })();
