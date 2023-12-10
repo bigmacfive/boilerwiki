@@ -1,0 +1,12 @@
+#mouse-follower {
+    position: fixed;
+    pointer-events: none; /* Make sure the follower doesn't interfere with mouse events */
+  }
+  
+  #mouse-image {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  

@@ -382,7 +382,7 @@ a,
 }
 
 a:hover {
-    color: indigo;
+    color: gold;
 }
 
 table {
@@ -606,3 +606,13 @@ p.mathjax-block,
 
 
  @media print { @page {margin: 0 0 0 0;} body.boilerstyle {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+
+ #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    margin-top: 30px;
+  }

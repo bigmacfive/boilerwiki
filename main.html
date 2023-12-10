@@ -3,9 +3,31 @@
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 <link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/searchbar.css">
+<link rel="stylesheet" href="CSS/mouse.css">
 <title>Boilerwiki</title>
 </head>
+<div id="mouse-follower">
+    <img id="mouse-image" src="images/train.png" alt="Mouse Follower">
+  </div>
+    <div>
+        <script src="JS/search.js"></script>
+        <script src="JS/mouseeffect.js"></script>
+        <script src="JS/chat.js"></script>
+        <script src="JS/message.js"></script>
+    </div>
 <body class='boilerstyle'><div class='boilerstyle-content'>
-<div id='write'  class=''><h1 id='boiler-wiki'><a href='https://boilerwiki.me/main'><span>Boiler Wiki</span></a></h1><h4 id='about\tdining\tcalender\tnews\tstore'><a href='https://boilerwiki.me/Pages/about'><span>About</span></a><span>	</span><a href='https://boilerwiki.me/Pages/dining'><span>Dining</span></a><span>	</span><a href='https://boilerwiki.me/Pages/calender'><span>Calender</span></a><span>	</span><a href='https://boilerwiki.me/Pages/news'><span>News</span></a><span>	</span><a href='https://boilerwiki.me/Pages/store'><span>Store</span></a></h4><hr /><figure><table><thead><tr><th><span>WIKI</span></th></tr></thead><tbody><tr><td><a href='https://boilerwiki.me/Pages/about'><span>About US</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/pharmacy'><span>Pharmacy Information</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/calender'><span>Purdue Calender</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/store'><span>Shopping Information</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/bank'><span>Bank and Card Information</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/driver'><span>Driver license&amp; Indiana ID card</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/dining'><span>Dining Information</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/news'><span>Purdue News</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/tour'><span>Tour Information</span></a></td></tr></tbody></table></figure><p>&nbsp;</p></div></div>
+    <div id ='header'>
+        <a href = "main.html"><img class = "logo" style = "width:348px;height:60px;" src = "images/Logo.png" alt = "logo"></a>
+    </div>
+
+<div id='write'  class=''>    
+    <h4 id='about\tdining\tcalender\tnews\tstore'><a href='https://boilerwiki.me/Pages/about'><span>About</span></a><span>	</span><a href='https://boilerwiki.me/Pages/dining'><span>Dining</span></a><span>	</span><a href='https://boilerwiki.me/Pages/calender'><span>Calender</span></a><span>	</span><a href='https://boilerwiki.me/Pages/news'><span>News</span></a><span>	</span><a href='https://boilerwiki.me/Pages/store'><span>Store</span></a></h4>
+    <input type="text" id="SearchTxt" class="search-input" />
+    <input type="button" id="SearchBtn" class="search-button" value="Search" onclick="doSearch(document.getElementById('SearchTxt').value)" />
+    
+
+    <hr /><figure><table><thead><tr><th><span>WIKI</span></th></tr></thead><tbody><tr><td><a href='https://boilerwiki.me/Pages/about'><span>About US</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/pharmacy'><span>Pharmacy Information</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/calender'><span>Purdue Calender</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/store'><span>Shopping Information</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/bank'><span>Bank and Card Information</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/driver'><span>Driver license&amp; Indiana ID card</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/dining'><span>Dining Information</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/news'><span>Purdue News</span></a></td></tr><tr><td><a href='https://boilerwiki.me/Pages/tour'><span>Tour Information</span></a></td></tr></tbody></table></figure><p>&nbsp;</p></div></div>
+
 </body>
 </html>
