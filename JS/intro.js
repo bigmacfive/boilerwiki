@@ -11,5 +11,5 @@
       } else {
         document.querySelector("#progress").textContent = progress + "%";
       }
-    }, 30);
+    }, 10);
   })();
