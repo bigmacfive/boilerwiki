@@ -15,12 +15,17 @@
 
 
 ### Development
+#### Yoonjae
+- Development manage
+- Development operations
+
+
 #### Minkyu
 - Web page
 - Git, Web publishing
-- Overall Javascript Function develop.
+- Overall Javascript Function develop
 
-#### Yihan
+#### Yihang
 - Web layout develop
 - calender, detail, dining page develop
 - webpage stylesheet edit
